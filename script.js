@@ -47,7 +47,7 @@ let myCountryText = document.getElementById('myCountryText');
          console.log("country not selected")
      }
      if (duplicates.length !== 0) {
-         alert("You cannot select the same country twice.");
+         alert("You cannot select the same country twice.");}
      else if (duplicates.length !== 0) {
          alert("Please assign all your points. You cannot select the same country twice.");
          countries = [];
@@ -111,4 +111,4 @@ let myCountryText = document.getElementById('myCountryText');
       thank.style.display = "block";
      }
      else {}
- }
+ }}
