@@ -46,8 +46,8 @@ function createArray() {
         checkbox.checked = false;
         console.log("country not selected")
     }
-    if (duplicates.length !== 0) {
-        alert("You cannot select the same country twice.");
+    else if (duplicates.length !== 0) {
+        alert("Please assign all your points. You cannot select the same country twice.");
         countries = [];
         checkbox.checked = false; 
         console.log("duplicates"); 
