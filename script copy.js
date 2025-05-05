@@ -105,9 +105,9 @@ function done() {
     {
      console.log(countries);
      $.ajax({
-        url: "",
+        url: "https://fabform.io/f/uzSauBx",
         type: "POST",
-        data: {myArray : arr}
+        data: {myArray : countries}
     });   
      form.style.display = "none";
      intro.style.display = "none";
