@@ -20,7 +20,7 @@ body {
 }
 h1 {
     font-family: Custom, impact;
-    background-image: linear-gradient(-30deg,rgb(62, 62, 207) 0%, rgb(62, 62, 207) 40%, rgb(222, 210, 210) 60%, rgb(222, 210, 210) 55%, rgb(178, 15, 15) 65%, rgb(178, 15, 15) 100%);
+    background-image: linear-gradient(-30deg,rgb(62, 62, 207) 0%, rgb(62, 62, 207)  40%, rgb(222, 210, 210) 40%, rgb(222, 210, 210) 65%, rgb(178, 15, 15) 65%, rgb(178, 15, 15) 100%);
     color: transparent;
     background-clip: text;
     font-size: 50px;
