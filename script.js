@@ -189,9 +189,13 @@ function done() {
      }
     }
     else {};
-    setTimeout("submitForm()", 5*1000);
+    await delay(3000);
+    submitForm();
 }
 function submitForm() {
  const form = document.getElementById('form');
  form.sumbit();
+}
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
