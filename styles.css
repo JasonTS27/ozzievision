@@ -3,10 +3,6 @@
 } 
 
 html {
-    background-color: black;
-    
-}
-#html {
  background-image: url("background.png");
     background-attachment: fixed;
     background-position-x: center;
