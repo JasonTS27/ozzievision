@@ -101,6 +101,85 @@ let myCountryText = document.getElementById('myCountryText');
  function done() {
      if (checkbox.checked)
      {
+      if (countries[0] === "Poland") {
+        thank.innerText = "Thanks for Voting! \nYou're simply divine!";
+     }
+     else if (countries[0] === "Czechia") {
+        thank.innerText = "Kiss Kiss Thanks for Voting!";
+     }
+     else if (countries[0] === "Ireland") {
+        thank.innerText = "You wish Laika never died too, huh? \nThanks for voting!";
+     }
+     else if (countries[0] === "Sweden") {
+        thank.innerText = "Yski Kaksi Kolme \nThanks for Voting!";
+     }
+     else if (countries[0] === "Portugal") {
+        thank.innerText = "Thanks for Voting! \nMake yourself at home!";
+     }
+     else if (countries[0] === "Denmark") {
+        thank.innerText = "!gnitoV rof sknahT";
+     }
+     else if (countries[0] === "France") {
+        thank.innerText = "Thanks for Voting Maman!";
+     }
+     else if (countries[0] === "Ukraine") {
+        thank.innerText = "Thanks for voting! \nLet's 'pray' they do well!";
+     }
+     else if (countries[0] === "Switzerland") {
+        thank.innerText = "Thanks for Voting! \nBon Voyage!";
+     }
+     else if (countries[0] === "Iceland") {
+        thank.innerText = "Aye Aye Cap'n! \nThanks for Voting!";
+     }
+     else if (countries[0] === "Croatia") {
+        thank.innerText = "Thanks for voting! \nWe promise our cakes are safe!";
+     }
+     else if (countries[0] === "Austria") {
+        thank.innerText = "Hit those high notes! \nThanks for voting!";
+     }
+     else if (countries[0] === "Greece") {
+        thank.innerText = "The stars align! \nThanks for Voting!";
+     }
+     else if (countries[0] === "Armenia") {
+        thank.innerText = "Thanks for Voting! \nLet's Hope you survive tonight!";
+     }
+     else if (countries[0] === "Latvia") {
+        thank.innerText = "Were you away with the Fairies? \nThanks for Voting!";
+     }
+     else if (countries[0] === "Norway") {
+        thank.innerText = "My Knight in Shining Armour! \nThanks for Voting!";
+     }
+     else if (countries[0] === "Malta") {
+        thank.innerText = "Thanks for Voting! \nGo Serve C*nt!";
+     }
+     else if (countries[0] === "Italy") {
+        thank.innerText = "Thanks for Voting! \nHave Strength, it's nearly over!";
+     }
+     else if (countries[0] === "Estonia") {
+        thank.innerText = "Mi Amore! \nThanks for Voting! \nEnjoy the Party Por Favore!";
+     }
+     else if (countries[0] === "Finland") {
+        thank.innerText = "Safe Search is on. \nComment Cannot be Displayed.";
+     }
+     else if (countries[0] === "Australia") {
+        thank.innerText = "Th-th Thanks, \nTh-th Thanks for Voting!";
+     }
+     else if (countries[0] === "Albania") {
+        thank.innerText = "Thanks for Voting! \nYou are on Fire!";
+     }
+     else if (countries[0] === "Germany") {
+        thank.innerText = "Thanks for Voting! \nHope you have a ball!";
+     }
+     else if (countries[0] === "Spain") {
+        thank.innerText = "Thanks for Voting Diva!";
+     }
+     else if (countries[0] === "Netherlands") {
+        thank.innerText = "C'est La Vie, \nThanks for Voting!";
+     }
+     else if (countries[0] === "Belgium") {
+        thank.innerText = "Thanks for voting! \nShine Bright!";
+     }
+    }
       form.style.display = "none";
       intro.style.display = "none";
       thank.style.display = "block";
