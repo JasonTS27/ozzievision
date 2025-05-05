@@ -99,7 +99,7 @@ let myCountryText = document.getElementById('myCountryText');
  dd10.addEventListener("change", uncheck);
  function uncheck () {
      checkbox.checked = false;
- }
+ }}
  
  vote.addEventListener("click", done);
  
@@ -111,4 +111,4 @@ let myCountryText = document.getElementById('myCountryText');
       thank.style.display = "block";
      }
      else {}
- }}
+ }
