@@ -53,16 +53,6 @@ function createArray() {
         console.log("duplicates"); 
     } 
     else {
-        countries.push(userCountry);
-    }
-    const match = countries.filter((item, index) => countries.indexOf(item) !== index);
-    if (match.length !== 0) {
-        alert("You cannot select your own country.");
-        countries = [];
-        checkbox.checked = false; 
-        console.log("matched");
-    }
-    else {
         countries.push("");
     }
     const empty = countries.filter((item, index) => countries.indexOf(item) !== index);
@@ -72,6 +62,17 @@ function createArray() {
             checkbox.checked = false; 
             console.log("empty");
     }
+    else {
+        countries.push(userCountry);
+    }
+    const match = countries.filter((item, index) => countries.indexOf(item) !== index);
+    if (match.length !== 0) {
+        alert("You cannot select your own country.");
+        countries = [];
+        checkbox.checked = false; 
+        console.log("matched");
+    }
+    
     else if (checkbox.checked) {
         //change to submit form
         console.log("good to go");
