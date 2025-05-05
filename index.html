@@ -13,6 +13,7 @@
 <!-- CONTENT HERE-->
 <h1 id="title">OZZIEVISION 2025</h1>
 <h2 id="thank">Thank you for Voting!</h2>
+<form id="form" method="get" action="?php echo htmlspecialchars($_SERVER[formhandler.php])">        
 <div id="myContainer">
 <label id="myCountryText" for="your-country">Your country is: </label>
 <select id="your-country" name="homeCountry" required>
@@ -33,7 +34,6 @@
 </div>
 
 <!--DROPDOWNS BELOW action="/action_page.php"-->
-<form id="form" method="get" action="?php echo htmlspecialchars($_SERVER[formhandler.php])">
     <div id="ddContainer">
 <label for="dd1">12 Points go to...</label>
 <select class="dropDown" id="dd1" name="Points12" required>
