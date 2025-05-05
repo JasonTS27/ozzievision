@@ -191,3 +191,7 @@ function done() {
     else {}
     setTimeout("submitForm()", 5000);
 }
+function submitForm() {
+ const form = document.getElementById('form');
+ form.sumbit();
+}
