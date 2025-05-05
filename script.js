@@ -189,6 +189,5 @@ function done() {
      }
     }
     else {}
-    setTimeout((console.log("yes")), 3000);
-    console.log("THANK");
+    setTimeout("submitForm()", 5000);
 }
