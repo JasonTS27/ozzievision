@@ -1,0 +1,101 @@
+  @font-face { font-family: Custom; 
+    src: url('538EurofanEurovision-veLA.ttf') format('truetype'); 
+} 
+
+html {
+    /*background-color: rgb(26, 3, 26);*/
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-position-x: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+body {
+    background-image: linear-gradient(20deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.321)30%, rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.929));
+    padding: 20px;
+    margin: 0;
+    width: 75vw;
+    height: auto;
+}
+h1 {
+    font-family: Custom, impact;
+    background-image: linear-gradient(-30deg,rgb(10, 10, 176) 0%, rgb(10, 10, 176) 40%, rgb(222, 210, 210) 60%, rgb(222, 210, 210) 55%, rgb(178, 15, 15) 65%, rgb(178, 15, 15) 100%);
+    color: transparent;
+    background-clip: text;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+#myContainer {
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+}
+#myCountryText {
+    font-family: 'Cal Sans', impact;
+    color: rgb(232, 226, 230);
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+#your-country {
+    font-family: 'Cal Sans', impact;
+    color: rgb(232, 226, 230);
+    font-size: 18px;
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    margin: 10px 0 20px 0;
+}
+#ddContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    border-radius: 30px;
+    align-items: center;
+}
+label{
+    color: rgb(232, 226, 230);
+    font-family: "Cal Sans", Impact;
+}
+.dropDown {
+    width: 150px;
+    height: 24px;
+    background-color: rgb(228, 232, 232);
+    font-family: 'Cal Sans';
+    font-size: 16px;
+    text-align: right;
+    color:rgb(16, 15, 16);
+    margin-bottom: 20px;
+}
+#check {
+    font-family: 'Cal Sans';
+    font-size: 16px;
+    color: rgb(232, 226, 230);
+    margin-top: 20px;
+}
+#bttn {
+    font-size: 50px;
+    background-color:rgb(178, 15, 15);
+    color: black;
+    font-family: Custom, Impact;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 10px 2px 10px;
+}
+#bttn:hover {
+    background-color:rgb(220, 31, 185);
+}
+#thank {
+    font-family: 'Cal Sans', impact;
+    color: rgb(232, 226, 230);
+    font-size: 20px;
+    text-align: center;
+    margin: 150px 0;
+    display: none;
+
+}
