@@ -9,10 +9,6 @@ let myCountryText = document.getElementById('myCountryText');
  function newCountry () {
   checkbox.checked = false;
  userCountry = yourCountry.value;      
-  /* `Your Country is: ${userCountry}.`;
-  const userCountry = yourCountry.value;
-     myCountry.textContent =`Your Country is: ${userCountry}.`;
-     */
  }
  
  const dd1 = document.getElementById('dd1');
@@ -44,7 +40,7 @@ let myCountryText = document.getElementById('myCountryText');
          alert("Please select your country.");
          countries = [];
          checkbox.checked = false;
-         console.log("country not selected")
+         console.log("country not selected");
      }
      if (duplicates.length !== 0) {
          alert("You cannot select the same country twice.");}
@@ -76,7 +72,6 @@ let myCountryText = document.getElementById('myCountryText');
      }
  
      else if (checkbox.checked) {
-         //change to submit form
          console.log("good to go");
          console.log(countries);
          //document.getElementById("form").submit();  
@@ -99,7 +94,7 @@ let myCountryText = document.getElementById('myCountryText');
  dd10.addEventListener("change", uncheck);
  function uncheck () {
      checkbox.checked = false;
- }}
+ }
  
  vote.addEventListener("click", done);
  
