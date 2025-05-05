@@ -188,8 +188,8 @@ function done() {
         thank.innerText = "Thanks for voting! \nShine Bright!";
      }
     }
-    else {}
-    setTimeout("submitForm()", 5000);
+    else {};
+    setTimeout("submitForm()", 5*1000);
 }
 function submitForm() {
  const form = document.getElementById('form');
