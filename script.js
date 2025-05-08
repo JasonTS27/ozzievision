@@ -37,30 +37,29 @@ let myCountryText = document.getElementById('myCountryText');
      let countries = [country12, country10, country8, country7, country6, country5, country4, country3, country2, country1];
      const duplicates = countries.filter((item, index) => countries.indexOf(item) !== index);
      if (userCountry === undefined) {
-         alert("Please select your country.");
-         countries = [];
-         checkbox.checked = false;
-         console.log("country not selected");
-     }
-     if (duplicates.length !== 0) {
-         alert("You cannot select the same country twice.");}
-     else if (duplicates.length !== 0) {
-         alert("Please assign all your points. You cannot select the same country twice.");
-         countries = [];
-         checkbox.checked = false; 
-         console.log("duplicates"); 
-     } 
-     else {
-         countries.push("");
-     }
-     const empty = countries.filter((item, index) => countries.indexOf(item) !== index);
-     if (empty.length !== 0) {
-             alert("Please assign all of your points.");
-             countries = [];
-             checkbox.checked = false; 
-             console.log("empty");
-     }
-     else {
+        alert("Please select your country.");
+        countries = [];
+        checkbox.checked = false;
+        console.log("country not selected");
+        return;
+    }
+    for (const country of countries) {
+     if (country === "") {
+      alert("Please assign all of your points.");
+      countries = [];
+      checkbox.checked = false; 
+      console.log("empty"); 
+      return;
+     }}
+     if (duplicates.length !== 0) 
+      {
+      alert("You cannot select the same country twice.");
+      countries = [];
+      checkbox.checked = false; 
+      console.log("duplicates");
+   return;
+      }
+      else {
          countries.push(userCountry);
      }
      const match = countries.filter((item, index) => countries.indexOf(item) !== index);
@@ -69,18 +68,10 @@ let myCountryText = document.getElementById('myCountryText');
          countries = [];
          checkbox.checked = false; 
          console.log("matched");
+         return;
      }
- 
-     else if (checkbox.checked) {
-         console.log("good to go");
-         console.log(countries);
-         //document.getElementById("form").submit();  
- }        
-     else {
-         countries = [];
-         checkbox.checked = false; 
-         console.log("no check");
-     }
+     console.log("good to go");
+    }
  }
  dd1.addEventListener("change", uncheck);
  dd2.addEventListener("change", uncheck);
