@@ -4,7 +4,7 @@
 
 html {
     background-color: black;
-    background-image: url("background.png");
+    background-image: url("./background.png");
     background-attachment: fixed;
     background-position-x: center;
     overflow-x: hidden; 
