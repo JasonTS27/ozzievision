@@ -72,7 +72,7 @@ let myCountryText = document.getElementById('myCountryText');
      }
      console.log("good to go");
     }
- }
+
  dd1.addEventListener("change", uncheck);
  dd2.addEventListener("change", uncheck);
  dd3.addEventListener("change", uncheck);
