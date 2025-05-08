@@ -1,16 +1,6 @@
-let myCountryText = document.getElementById('myCountryText');
- let yourCountry = document.getElementById('your-country');
  const checkbox = document.getElementById('check');
  const form = document.getElementById('form');
  const intro = document.getElementById('myContainer');
- let userCountry;
- 
- yourCountry.addEventListener("change", newCountry)
- function newCountry () {
-  checkbox.checked = false;
- userCountry = yourCountry.value;      
- }
- 
  const dd1 = document.getElementById('dd1');
  const dd2 = document.getElementById('dd2');
  const dd3 = document.getElementById('dd3');
@@ -22,6 +12,27 @@ let myCountryText = document.getElementById('myCountryText');
  const dd9 = document.getElementById('dd9');
  const dd10 = document.getElementById('dd10');
  const vote = document.getElementById('bttn');
+ let myCountryText = document.getElementById('myCountryText');
+ let yourCountry = document.getElementById('your-country');
+ let userCountry;
+yourCountry.addEventListener("change", newCountry);
+ dd1.addEventListener("change", uncheck);
+ dd2.addEventListener("change", uncheck);
+ dd3.addEventListener("change", uncheck);
+ dd4.addEventListener("change", uncheck);
+ dd5.addEventListener("change", uncheck);
+ dd6.addEventListener("change", uncheck);
+ dd7.addEventListener("change", uncheck);
+ dd8.addEventListener("change", uncheck);
+ dd9.addEventListener("change", uncheck);
+ dd10.addEventListener("change", uncheck);
+ vote.addEventListener("click", done);
+ 
+function newCountry () {
+    checkbox.checked = false;
+    userCountry = yourCountry.value;      
+ }
+ 
  checkbox.addEventListener("click", createArray);
  function createArray() {
      const country12 = dd1.value;
@@ -35,65 +46,44 @@ let myCountryText = document.getElementById('myCountryText');
      const country2 = dd9.value;
      const country1 = dd10.value;
      let countries = [country12, country10, country8, country7, country6, country5, country4, country3, country2, country1];
-     const duplicates = countries.filter((item, index) => countries.indexOf(item) !== index);
      if (userCountry === undefined) {
         alert("Please select your country.");
         countries = [];
         checkbox.checked = false;
-        console.log("country not selected");
-        return;
+       return;
     }
     for (const country of countries) {
-     if (country === "") {
-      alert("Please assign all of your points.");
-      countries = [];
-      checkbox.checked = false; 
-      console.log("empty"); 
-      return;
+        if (country === "") {
+        alert("Please assign all of your points.");
+        countries = [];
+        checkbox.checked = false; 
+        console.log("empty"); 
+       return;
      }}
-     if (duplicates.length !== 0) 
-      {
-      alert("You cannot select the same country twice.");
-      countries = [];
-      checkbox.checked = false; 
-      console.log("duplicates");
-   return;
-      }
-      else {
-         countries.push(userCountry);
+     const duplicates = countries.filter((item, index) => countries.indexOf(item) !== index);
+     if (duplicates.length !== 0) {
+        alert("You cannot select the same country twice.");
+        countries = [];
+        checkbox.checked = false; 
+       return;
+     }
+     else {
+        countries.push(userCountry);
      }
      const match = countries.filter((item, index) => countries.indexOf(item) !== index);
      if (match.length !== 0) {
          alert("You cannot select your own country.");
          countries = [];
          checkbox.checked = false; 
-         console.log("matched");
-         return;
-     }
-     console.log("good to go");
-    }
+        return;
+     }}
 
- dd1.addEventListener("change", uncheck);
- dd2.addEventListener("change", uncheck);
- dd3.addEventListener("change", uncheck);
- dd4.addEventListener("change", uncheck);
- dd5.addEventListener("change", uncheck);
- dd6.addEventListener("change", uncheck);
- dd7.addEventListener("change", uncheck);
- dd8.addEventListener("change", uncheck);
- dd9.addEventListener("change", uncheck);
- dd10.addEventListener("change", uncheck);
- function uncheck () {
-     checkbox.checked = false;
+function uncheck () {
+   checkbox.checked = false;
  }
  
- vote.addEventListener("click", done);
- 
- function done() {
-     if (checkbox.checked)
-     {
+function done() {
+   if (checkbox.checked) {
       form.style.display = "none";
       intro.style.display = "none";
-     }
-     else {}
- }
+     }}
