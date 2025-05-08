@@ -1,5 +1,5 @@
 @font-face { font-family: Custom; 
-    src: url('538EurofanEurovision-veLA.ttf') format('truetype'); 
+    src: url('./538EurofanEurovision-veLA.ttf') format('truetype'); 
 } 
 
 html {
