@@ -11,7 +11,6 @@
  const dd8 = document.getElementById('dd8');
  const dd9 = document.getElementById('dd9');
  const dd10 = document.getElementById('dd10');
- const vote = document.getElementById('bttn');
  let myCountryText = document.getElementById('myCountryText');
  let yourCountry = document.getElementById('your-country');
  let userCountry;
@@ -26,7 +25,6 @@ yourCountry.addEventListener("change", newCountry);
  dd8.addEventListener("change", uncheck);
  dd9.addEventListener("change", uncheck);
  dd10.addEventListener("change", uncheck);
- vote.addEventListener("click", done);
  
 function newCountry () {
     checkbox.checked = false;
@@ -81,9 +79,3 @@ function newCountry () {
 function uncheck () {
    checkbox.checked = false;
  }
- 
-function done() {
-   if (checkbox.checked) {
-      form.style.display = "none";
-      intro.style.display = "none";
-     }}
