@@ -94,7 +94,6 @@ let myCountryText = document.getElementById('myCountryText');
      {
       form.style.display = "none";
       intro.style.display = "none";
-      thank.style.display = "block";
      }
      else {}
  }
